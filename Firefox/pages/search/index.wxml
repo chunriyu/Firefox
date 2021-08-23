@@ -1,0 +1,15 @@
+<view class="search_row">
+      <view  class="searchInput">
+            <input value="{{inpValue}}" placeholder="请输入您要搜索的商品"  bindinput="searchInput" >
+             </input>
+             <view wx:if="{{isFocus}}" bindtap="close" class="iconfont icon-quxiao close"></view>
+      </view>
+     
+  
+      
+</view>
+<view class="search_content">
+      <navigator url="/pages/goos_detail/index?goods_id={{item.goods_id}}" wx:for="{{goods}}" wx:key="goods_id" class="search_item" >
+            {{item.goods_name}}
+      </navigator>
+</view>

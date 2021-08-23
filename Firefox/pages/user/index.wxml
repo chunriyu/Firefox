@@ -1,0 +1,156 @@
+<!-- 登录信息 -->
+<view class="user-header">
+      <view class="user" wx:if="{{!isLogin}}">
+            <view class="user_img">
+                  <image mode="widthFix" src="https://img1.baidu.com/it/u=2115534099,3269649209&fm=26&fmt=auto&gp=0.jpg"></image>
+            </view>
+            <view class="user-login" bindtap="login">
+                  请登录
+            </view>
+            
+      </view>
+      <view class="user" wx:else>
+            <view class="user_img">
+                  <image mode="widthFix" src="{{user.imgSrc}}"></image>
+            </view>
+            <view class="user-login" bindtap="login">
+                  {{user.name}}
+            </view>
+            <view  bindtap="getMoney"  class="Sign">
+                  <image mode="widthFix" src="/icons/jinbi.png"></image>每日领金币
+            </view>
+      </view>
+      <view class="user-under-advertisement">
+            <text class="recommend">每日推荐</text>
+            Pick公牛插座，手机发烧友充电安全又贴心
+            <text class="lt">></text>
+      </view>
+</view>
+<!-- 订单区域 -->
+<view class="order">
+      <view class="my_order"  >
+            我的订单
+      </view>
+      <view class="order_type">
+            <view>
+                  <navigator url="/pages/order/index">
+                        <image mode="widthFix" src="/icons/dingdan.png"></image>
+                        <view>全部订单</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator url="/pages/pay/index">
+
+                        <image mode="widthFix" src="/icons/daifukuan.png"></image>
+                        <view>待付款</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator >
+
+                        <image mode="widthFix" src="/icons/ziyuan.png"></image>
+                        <view>待收货</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator>
+
+                        <image mode="widthFix" src="/icons/tuikuan.png"></image>
+                        <view>退款/退货 </view>
+                  </navigator>
+            </view>
+      </view>
+</view>
+
+<!-- 功能区 -->
+<view class="function">
+      <view class="function_type">
+            <view>
+                  <navigator  >
+                        <view class="num">0</view>
+                        <view>收藏的店铺</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator url="/pages/collect/index">
+
+                        <view class="num">{{collect.commodity}}</view>
+                        <view>收藏的商品</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator>
+
+                        <view class="num">0</view>
+                        <view>关注的商品</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator>
+
+                        <view class="num">0</view>
+                        <view>我的足迹</view>
+                  </navigator>
+            </view>
+      </view>
+</view>
+
+<!-- 服务区域 -->
+<view class="service">
+      <view class="my_service">
+            我的服务
+      </view>
+      <view class="service_type">
+            <view bindtap="showMoney">
+                  <view class="money">
+                        <image mode="widthFix" src="/icons/yue.png"></image>
+                        <view>我的余额</view>
+                  </view>
+            </view>
+            <view>
+                  <navigator>
+                        <image mode="widthFix" src="/icons/kefu.png"></image>
+                        <view>联系客服</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator>
+
+                        <image mode="widthFix" src="/icons/shouhuodizhi.png"></image>
+                        <view>收货地址</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator>
+
+                        <image mode="widthFix" src="/icons/gouwu.png"></image>
+                        <view>超值拼团</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator>
+
+                        <image mode="widthFix" src="/icons/guanyu.png"></image>
+                        <view>关于我们</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator>
+                        <image mode="widthFix" src="/icons/youhuijuan-xianxing2-0.png"></image>
+                        <view>优惠卷</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator>
+                        <image mode="widthFix" src="/icons/yijian.png"></image>
+                        <view>意见反馈</view>
+                  </navigator>
+            </view>
+            <view>
+                  <navigator>
+                        <image mode="widthFix" src="/icons/shezhi.png"></image>
+                        <view>设置</view>
+                  </navigator>
+            </view>
+      </view>
+</view>

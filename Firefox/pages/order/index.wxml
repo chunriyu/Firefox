@@ -1,0 +1,26 @@
+
+<view>
+      <button class="empty" bindtap="empty" plain >清空订单</button>
+</view>
+<view class="collect">
+      <view class="collect_list" wx:for="{{purchased}}" wx:key="{{goods_id}}" data-id="{{item.goods_id}}" bindtap="navigateTo" >
+           
+            <image
+                  
+                  mode="widthFix"
+                  src="{{item.goods_small_logo?item.goods_small_logo:'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F017bcb58b4db5fa801219c7719b5ff.jpg%401280w_1l_2o_100sh.jpg&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1631944526&t=9e8ce183d0012677ab659f6ef85a7e77'}}">
+            </image>
+            <view class="collect_list_words">
+                  <view class="collect_list_title">
+                        {{item.goods_name}}
+                  </view>
+                  <view class="collect_list_price">
+                        ￥{{item.goods_price}}
+                        <view class="num">
+                              x{{item.num}}
+                        </view>
+                  </view>
+            </view>
+      </view>
+
+</view>

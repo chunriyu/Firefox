@@ -1,0 +1,26 @@
+view.success {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100rpx;
+}
+view.success image {
+  width: 40%;
+}
+view.success view.text {
+  font-size: 48rpx;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80rpx;
+  font-size: 30rpx;
+}
+.btn navigator {
+  padding: 10rpx 20rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 30rpx;
+  margin: 0 40rpx;
+}

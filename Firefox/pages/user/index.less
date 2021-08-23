@@ -1,0 +1,171 @@
+page{
+    padding: 20rpx;
+    background-color: rgb(233, 233, 233);
+}
+.user-header{
+   margin-bottom: 20rpx;
+   box-shadow: 0 5px 5px -5px #ccc;
+   background-color: #fff;
+    view.user {
+        display: flex;
+        padding: 10rpx;
+        align-items: center;
+        view.user_img {
+            flex: 1;
+            display: flex;
+            border-radius: 50%;
+            overflow: hidden;
+            image {
+                width: 100%;
+          }
+        }
+        
+        .Sign{
+            image{
+                width: 20%;
+            }
+            background-color: #fff;
+            border-radius: 30rpx;
+           border: 1rpx solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 2;
+            font-size: 24rpx;
+            padding: 10rpx;
+        }
+        view.user-login {
+            display: flex;
+
+            align-items: center;
+            flex: 5;
+            font-size: 38rpx;
+            padding: 0 30rpx;
+            font-weight: 600;
+        }
+      }
+     .user-under-advertisement{
+         margin-top: 30rpx;
+         width: 100%;
+         display: flex;
+         font-size: 24rpx;
+         align-items: center;
+         
+         padding:0 10rpx ;
+         border-top-left-radius:20rpx;
+        border-top-right-radius:20rpx;
+         color: #fff;
+         position: relative;
+         height: 60rpx;
+         background-color: rgb(248, 106, 135);
+         .recommend{
+             font-weight: 600;
+             margin: 0 30rpx;
+         }
+         .lt{
+            font-weight: 600;
+            font-size: 32rpx;
+            position: absolute;
+            right: 20rpx;
+            top:10rpx;
+         }
+     } 
+}   
+
+.order{
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    .my_order{
+        padding: 30rpx;
+        border-bottom: 1rpx solid #ccc;
+    }
+    .order_type{
+        display: flex;
+        padding: 20rpx;
+        &>view{
+            flex: 1;
+          
+            navigator{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                image{
+                    width: 20%;
+                }
+            }
+            
+        }
+    }
+    
+
+}
+.function{
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    
+    .function_type{
+        display: flex;
+        padding: 20rpx;
+        &>view{
+            flex: 1;
+            navigator{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                .num{
+                    color: var(--themeColor);
+                }
+            }
+            
+        }
+    }
+    
+
+}
+// .advertisement{
+//     justify-content: space-between;
+//     display: flex;
+//     .dvertisement-region{
+//         width: 230rpx;
+//         border-radius: 10rpx;
+//         overflow: hidden;
+//         display: flex;
+//         justify-content: center;
+        
+//         image{
+//             width: 100%;
+//         }
+//     }
+// }
+.service{
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    .my_service{
+        padding: 30rpx;
+        border-bottom: 1rpx solid #ccc;
+    }
+    .service_type{
+        display: flex;
+        padding: 20rpx;
+        flex-wrap: wrap;
+        &>view{
+          width: 25%;
+          margin-bottom: 30rpx;
+          
+            navigator,.money{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                image{
+                    width: 20%;
+                }
+            }
+            
+        }
+    }
+    
+
+}

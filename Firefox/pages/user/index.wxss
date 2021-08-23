@@ -1,0 +1,142 @@
+page {
+  padding: 20rpx;
+  background-color: #e9e9e9;
+}
+.user-header {
+  margin-bottom: 20rpx;
+  box-shadow: 0 5px 5px -5px #ccc;
+  background-color: #fff;
+}
+.user-header view.user {
+  display: flex;
+  padding: 10rpx;
+  align-items: center;
+}
+.user-header view.user view.user_img {
+  flex: 1;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-header view.user view.user_img image {
+  width: 100%;
+}
+.user-header view.user .Sign {
+  background-color: #fff;
+  border-radius: 30rpx;
+  border: 1rpx solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  font-size: 24rpx;
+  padding: 10rpx;
+}
+.user-header view.user .Sign image {
+  width: 20%;
+}
+.user-header view.user view.user-login {
+  display: flex;
+  align-items: center;
+  flex: 5;
+  font-size: 38rpx;
+  padding: 0 30rpx;
+  font-weight: 600;
+}
+.user-header .user-under-advertisement {
+  margin-top: 30rpx;
+  width: 100%;
+  display: flex;
+  font-size: 24rpx;
+  align-items: center;
+  padding: 0 10rpx ;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  color: #fff;
+  position: relative;
+  height: 60rpx;
+  background-color: #f86a87;
+}
+.user-header .user-under-advertisement .recommend {
+  font-weight: 600;
+  margin: 0 30rpx;
+}
+.user-header .user-under-advertisement .lt {
+  font-weight: 600;
+  font-size: 32rpx;
+  position: absolute;
+  right: 20rpx;
+  top: 10rpx;
+}
+.order {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.order .my_order {
+  padding: 30rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.order .order_type {
+  display: flex;
+  padding: 20rpx;
+}
+.order .order_type > view {
+  flex: 1;
+}
+.order .order_type > view navigator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.order .order_type > view navigator image {
+  width: 20%;
+}
+.function {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.function .function_type {
+  display: flex;
+  padding: 20rpx;
+}
+.function .function_type > view {
+  flex: 1;
+}
+.function .function_type > view navigator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.function .function_type > view navigator .num {
+  color: var(--themeColor);
+}
+.service {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.service .my_service {
+  padding: 30rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.service .service_type {
+  display: flex;
+  padding: 20rpx;
+  flex-wrap: wrap;
+}
+.service .service_type > view {
+  width: 25%;
+  margin-bottom: 30rpx;
+}
+.service .service_type > view navigator,
+.service .service_type > view .money {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.service .service_type > view navigator image,
+.service .service_type > view .money image {
+  width: 20%;
+}
